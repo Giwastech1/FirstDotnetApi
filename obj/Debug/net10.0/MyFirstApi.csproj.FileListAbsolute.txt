@@ -31,3 +31,4 @@ C:\Users\User\Desktop\Dotnet\MyFirstApi\obj\Debug\net10.0\refint\MyFirstApi.dll
 C:\Users\User\Desktop\Dotnet\MyFirstApi\obj\Debug\net10.0\MyFirstApi.pdb
 C:\Users\User\Desktop\Dotnet\MyFirstApi\obj\Debug\net10.0\MyFirstApi.genruntimeconfig.cache
 C:\Users\User\Desktop\Dotnet\MyFirstApi\obj\Debug\net10.0\ref\MyFirstApi.dll
+C:\Users\User\Desktop\Dotnet\MyFirstApi\obj\Debug\net10.0\MyFirstApi.sourcelink.json
