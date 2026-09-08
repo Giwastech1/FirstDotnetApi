@@ -49,6 +49,17 @@ app.MapGet("/course", () =>
     return "I am learning ASP.NET core";
 });
 
+//student
+app.MapGet("/student", () =>
+{
+    return new
+    {
+        Name = "Giwa",
+        Age = 26,
+        Course = "ASP.NET core",
+    };
+});
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
