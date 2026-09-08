@@ -60,6 +60,31 @@ app.MapGet("/student", () =>
     };
 });
 
+//laptop
+app.MapGet("/laptop", () =>
+{
+    return new[]
+    {
+        new
+        {
+            Brand = "Lenovo",
+            Price = 15000,
+            Year = 2025
+        },
+        new
+        {
+             Brand = "HP",
+             Price = 15000,
+             Year = 2020
+        },
+        new
+        {
+            Brand = "Dell",
+            Price = 15000,
+            Year = 2018
+        }
+    };
+});
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
