@@ -32,12 +32,12 @@ app.MapGet("/weatherforecast", () =>
     return forecast;
 })
 .WithName("GetWeatherForecast");
-
+//Hello endpoint
 app.MapGet("/hello", () =>
 {
     return "Hello from my first API";
 });
-
+//name endpoint
 app.MapGet("/name", () =>
 {
     return "My name is Giwa Toheeb";
