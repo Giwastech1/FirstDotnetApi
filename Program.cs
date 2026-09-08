@@ -38,6 +38,10 @@ app.MapGet("/hello", () =>
     return "Hello from my first API";
 });
 
+app.MapGet("/name", () =>
+{
+    return "My name is Giwa Toheeb";
+});
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
