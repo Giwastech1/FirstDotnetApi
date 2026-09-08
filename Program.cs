@@ -46,7 +46,7 @@ app.MapGet("/name", () =>
 //course
 app.MapGet("/course", () =>
 {
-    return "I am learning ASP.NET core";
+    return "I am learning ASP.NET core.";
 });
 
 //student
