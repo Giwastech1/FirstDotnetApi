@@ -85,7 +85,35 @@ app.MapGet("/laptop", () =>
         }
     };
 });
+
+app.MapGet("/phone", () =>
+{
+    return new[]
+    {
+        new Phone
+        {
+        Brand = "Infinix",
+        Price = 2000,
+        ProductionYear = "2020"
+         },
+         new Phone
+        {
+             Brand = "Tekno",
+             Price = 3000,
+             ProductionYear = "2024"
+          }
+    };
+});
+
 app.Run();
+
+class Phone
+{
+    public string? Brand { get; set; }
+    public int Price { get; set; }
+    public string? ProductionYear { get; set; }
+}
+
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
