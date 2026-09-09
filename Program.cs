@@ -86,29 +86,38 @@ app.MapGet("/laptop", () =>
     };
 });
 
-app.MapGet("/phone", () =>
+app.MapGet("/phones", () =>
 {
-    return new[]
+    List<Phone> phone =  new List<Phone>();
+    phone.Add(new Phone
     {
-        new Phone
-        {
-        Brand = "Infinix",
-        Price = 2000,
+        Brand = "Samsung",
+        Price = 15000,
         ProductionYear = 2020
-         },
-         new Phone
-        {
-             Brand = "Tekno",
-             Price = 3000,
-             ProductionYear = 2024
-          },
-          new Phone
-          {
-            Brand = "Iphone",
-            Price = 450343,
-            ProductionYear = 2023
-        }
-    };
+    });
+
+    phone.Add(new Phone
+    {
+        Brand = "Iphone",
+        Price = 300000,
+        ProductionYear = 2023
+    });
+
+    phone.Add(new Phone
+    {
+        Brand = "Infinix",
+        Price = 13000,
+        ProductionYear = 2018
+    });
+
+    phone.Add(new Phone
+    {
+        Brand = "Redmi",
+        Price = 11000,
+        ProductionYear = 2026
+    });
+    
+    return phone;
 });
 
 app.Run();
