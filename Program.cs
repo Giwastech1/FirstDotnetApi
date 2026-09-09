@@ -94,14 +94,20 @@ app.MapGet("/phone", () =>
         {
         Brand = "Infinix",
         Price = 2000,
-        ProductionYear = "2020"
+        ProductionYear = 2020
          },
          new Phone
         {
              Brand = "Tekno",
              Price = 3000,
-             ProductionYear = "2024"
-          }
+             ProductionYear = 2024
+          },
+          new Phone
+          {
+            Brand = "Iphone",
+            Price = 450343,
+            ProductionYear = 2023
+        }
     };
 });
 
@@ -111,7 +117,7 @@ class Phone
 {
     public string? Brand { get; set; }
     public int Price { get; set; }
-    public string? ProductionYear { get; set; }
+    public int ProductionYear { get; set; }
 }
 
 
