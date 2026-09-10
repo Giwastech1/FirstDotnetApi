@@ -116,10 +116,15 @@ app.MapGet("/phones", () =>
         Price = 11000,
         ProductionYear = 2026
     });
-    
+
     return phone;
 });
 
+//Adding new POST endpoint to add to phone
+app.MapPost("/phones", (Phone Phone) =>
+{
+    return Phone;
+});
 app.Run();
 
 class Phone
